@@ -1,0 +1,182 @@
+body {
+    background-color: rgb(19, 18, 18);
+    color: rgb(238, 229, 229);
+}
+
+.row__images {
+    display: flex;
+    overflow: hidden;
+    padding: 30px;
+    background-color: black;
+    border-color: black;
+    width: 98%;
+    height: 335px;
+    margin: 10px auto;
+    overflow-x: auto;
+}
+
+.row__images img {
+    display: inline-flex;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 30px;
+    height: auto;
+}
+
+
+/*.row__images img:hover {
+    transform: scale(1.15);
+    }*/
+
+
+/*.row__images:hover {
+    transform: scale(1.00);
+    }*/
+
+.row__largeimage {
+    max-height: 350px;
+}
+
+.row__largeimage:hover {
+    transform: scale(1.09);
+}
+
+.row {
+    color: rgb(246, 248, 252);
+}
+
+.movie img {
+    padding: 20px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.banner {
+    background-image: url(https://res.cloudinary.com/Sony-liv/image/fetch/c_fill,e_contrast:30,f_auto,fl_lossy,q_auto:low,w_1366/e_brightness:10/https://origin-staticv2.sonyliv.com/masthead_foreground/FACup21-22_Foreground_5thRound_Luton-Town-vs-Chelsea.png);
+    background-size: cover;
+    background-position: center;
+    background-color: red;
+    color: azure;
+    height: 448px;
+}
+
+.banner__contents {
+    margin-left: 40px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+.row__images img:focus {
+    transform: scale(1.50);
+}
+
+.row__images img.selected {
+    border: 1px solid white
+}
+
+.row__images img.unselected {
+    border: 1px solid rgb(12, 12, 12)
+}
+
+div#buttons {
+    height: 10px;
+    display: inline-flex;
+}
+
+.banner__title {
+    font-size: 48px;
+    font-weight: 800px;
+    padding-bottom: 16px;
+    border: whitesmoke;
+}
+
+.banner__description {
+    width: 45rem;
+    line-height: 20px;
+    padding-top: 16px;
+    font-size: 13px;
+    max-width: 360px;
+    height: 180px;
+    border: #000;
+}
+
+.banner__buttons {
+    cursor: pointer;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    font-weight: 700px;
+    border-radius: 4px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(12, 4, 4, 0.5);
+}
+
+.banner__buttons:hover {
+    color: black;
+}
+
+.topnav {
+    background-color: rgba(30, 39, 43, 0.5);
+    height: 50px;
+}
+
+.topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav img {
+    float: left;
+    padding: 2px 2px;
+    margin-right: 16px;
+}
+
+.topnav button {
+    float: left;
+    padding: 2px 3px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+#left {
+    width: 3%;
+    display: inline-block;
+}
+
+#left button {
+    cursor: pointer;
+}
+
+#right {
+    width: 3%;
+    display: inline-block;
+}
+
+#right button {
+    cursor: pointer;
+    margin-left: 1200px;
+}
+
+.child {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.child img {
+    height: 200px;
+    width: 100%;
+}

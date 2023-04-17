@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import React from 'react';
+import Menu from './Menu';
+import { Route, Routes } from 'react-router-dom';
+import Tvshows from './Tvshows';
+import Movies from './Movies';
+import Originals from './Originals';
+import Sports from './Sports';
+import Premium from './Premium';
+import Home from './Home';
+
+
+const App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <React.Fragment>
+      <Menu />
+     
+      <Routes>
+        {/* <Route  path='/' element={<Home/>} /> */}
+        <Route  path='/home' element={<Home/>} />
+        <Route  path='/tvshows' element={<Tvshows/>} />
+        {/* <Route  path='/Originals' element={<Originals />} /> */}
+        {/* <Route  path='/movies' element={<Movies />} /> */}
+        {/* <Route  path='/sports' element={<Sports/>} /> */}
+        {/* <Route  path='/premium' element={<Premium/>} /> */}
+      </Routes>
+  </React.Fragment>
   );
 }
 
